@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bo-loc-container {
+    height: 100px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    flex-wrap: wrap;
+    width: 70%;
+    float: right;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-title {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 6px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    min-width: 100px;
+    color: #444;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #fff;
+    width: max-content;
+    min-width: 50px;
+    max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown-content label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+.sort-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#sort-select {
+    padding: 6px;
+    font-size: 14px;
+}
+
+
+/*Phần BST */
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .main-product-bst {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .main-product-bst:hover {
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .main-product-img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-product-img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+  }
+
+  .main-product-bst:hover .main-product-img img{
+    transform: scale(1.08);
+  }
+
+  .main-product-bst .tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .main-product-bst .info-main {
+    margin-top: 15px;
+  }
+
+  .main-product-bst .info {
+    margin-top: 50px;
+  }
+
+  .main-product-bst .info h4 {
+    color: #004080;
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    font-size: 30px;
+  }
+
+  .main-product-bst .info p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+  }
+  
+  .main-product-bst .info p a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .main-product-bst .info p a:hover{
+    text-decoration: none;
+    color: pink;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+
+  .main-product-bst .info .price {
+    color: #e26b6b;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .main-badge {
+    display: inline-block;
+    background: #ffebeb;
+    color: #d60000;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 33px;
+    margin: 2px 2px 4px;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #ffebeb;
+    color: #d60000;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 2px 2px 4px;
+  }
+
+  /*sp con*/
+
+  .related-product-bsts {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .product-bst-item {
+    text-align: center;
+    position: relative;
+    flex: 1;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .product-bst-item:hover {
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .product-bst-item img {
+    width: 60%;
+    height: auto;
+  }
+
+  .product-bst-item .tags {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+  }
+
+  .product-bst-item .info h4 {
+    font-weight: bold;
+    color: #004080;
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+
+  .product-bst-item .info p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+  }
+
+  .product-bst-item .info p a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .product-bst-item .info p a:hover{
+    text-decoration: none;
+    color: pink;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+
+  .product-bst-item .info .price {
+    color: #f26b8a;
+    font-weight: bold;
+    font-size: 16px;
+  }

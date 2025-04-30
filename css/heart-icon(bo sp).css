@@ -1,0 +1,14 @@
+.heart-icon {
+    position: absolute;
+    font-size: 26px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 10;
+    right: 140px;
+    top: 20px;
+    }
+
+.heart-icon.active-heart {
+    color: red;
+    }
