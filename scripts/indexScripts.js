@@ -6,7 +6,7 @@ function setupSlider(id) {
     setInterval(() => {
         currentIndex = (currentIndex + 1) % slides.length;
         slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }, 1000);
+    }, 5000);
 }
 
 setupSlider('slider');
