@@ -35,19 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("cartItems", JSON.stringify(cart));
     alert("Đã thêm sản phẩm vào giỏ hàng!");
   };
-
-    // Xem thêm / thu gọn mô tả
-    window.toggleMoreInfo = function () {
-      const info = document.getElementById("moreInfo");
-      const btn = document.getElementById("toggleButton");
-      if (info.style.display === "none" || info.style.display === "") {
-        info.style.display = "block";
-        btn.innerText = "Thu Gọn";
-      } else {
-        info.style.display = "none";
-        btn.innerText = "Xem Thêm";
-      }
-    };
   
     // Thay đổi ảnh chính
     window.changeMainImage = function (src) {
