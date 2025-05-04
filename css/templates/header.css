@@ -1,7 +1,7 @@
 header {
     background-color: #F3F3F3;
     color: #1d2a3d;
-    padding: 10px 120px;
+    padding: 10px 120px 0px;
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -69,7 +69,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     background: #f3f3f3;
-    padding: 10px 0;
+    padding: 0 0 10px;
     margin: 0;
     gap: 10px;
 }
