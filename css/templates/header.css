@@ -28,6 +28,121 @@ header .logo a {
     transition: background-color 0.3s;
 }
 
+nav {
+    display: block;
+    justify-content: space-evenly;
+    background: #f9f9f9;
+    padding: 0px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0 20px;
+}
+  
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background: #f3f3f3;
+    padding: 10px 0;
+    margin: 0;
+    gap: 10px;
+}
+  
+.menu li {
+    position: relative;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+}
+  
+.submenu {
+    display: none;
+    gap: 60px;
+    top: 100%;
+    left: 150%;
+    transform: translateX(-50%);
+    background: white;
+    min-width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 99;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    position: absolute;
+}
+
+.submenu.dv{
+    left: -40%;
+    position: absolute;
+}
+
+.submenu.tintuc{
+    left: 50%;
+    position: absolute;
+}
+  
+.submenu li {
+    padding: 10px 10px 10px 0px;
+}
+  
+.submenu li a {
+    color: #333;
+    font-weight: normal;
+    padding: 8px 16px;
+}
+  
+.has-submenu:hover .submenu {
+    display: flex;
+}
+
+.submenu-column {
+    min-width: 160px;
+}
+  
+.submenu-column h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+  
+.submenu-column ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+.submenu-column ul li {
+    margin: 4px 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.submenu-row ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+  
+.submenu-row ul li {
+    margin: 4px 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
 header nav ul {
     list-style: none;
     padding: 0;
