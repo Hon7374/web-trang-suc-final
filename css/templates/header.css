@@ -39,6 +39,10 @@ header .left, .right {
     position: relative;
 }
 
+.icon-circle a{
+    text-decoration: none;
+}
+
 header .logo img {
     width: 150px;
 }
